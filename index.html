@@ -3,21 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday to Me!</title>
+    <title>Birthday Magic </title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1 class="title"> Happy Birthday to Me! </h1>
-        <p class="message">Today is the day I celebrate life, joy, and all the amazing moments that make me, me!</p>
-        <div class="cake">
-            <div class="candle"></div>
-        </div>
-        <button class="confetti-btn">Celebrate!</button>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+
+    <div id="cursor-dot"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <div class="landing" id="landing">
+        <h1>Happy Birthday!</h1>
+        <button class="start-btn" onclick="initParty()">Unlock the Magic</button>
     </div>
 
-    <div id="confetti"></div>
+    <div class="content" id="main-content">
+        <div class="gallery">
+            <div class="polaroid" style="--r: -5deg">
+                <img src="" alt="Memory">
+            </div>
+            <div class="polaroid" style="--r: 3deg">
+                <img src="" alt="Memory">
+            </div>
+            <div class="polaroid" style="--r: -2deg">
+                <img src="" alt="Memory">
+            </div>
+        </div>
 
-    <script src="script.js"></script>
+        <div class="traits">
+            <div class="glass-card">
+                <h3>The Best Listener </h3>
+                <p>Thank you for always being the person who silents.</p>
+            </div>
+            <div class="glass-card">
+                <h3>Chaos Friend</h3>
+                <p>No one else understands my weird sense of humor like you do.</p>
+            </div>
+            <div class="glass-card">
+                <h3>Absolute Legend </h3>
+                <p>You’re leveling up today, and you’ve never looked better doing it.</p>
+            </div>
+        </div>
+
+        <div class="message-box">
+            <h2>To my childhood friend...</h2>
+            <p>Every year gets better with you around. From our failed cooking attempts to the hours we spend laughing at nothing, I wouldn't trade our friendship for anything.</p>
+         <br>   <p><strong>Today is all about you. Enjoy every second!</strong></p>
+        </div>
+    </div>
+
+  
 </body>
-</html>
+</html>    
